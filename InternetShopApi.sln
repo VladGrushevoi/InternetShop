@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthServer", "AuthServer\AuthServer.csproj", "{D34E7A89-5F52-45F9-8F1C-C6DD235D886C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopApi", "ShopApi\ShopApi.csproj", "{E9F27F1D-32C4-47DB-A31A-8D99448FE17B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramBot", "TelegramBot\TelegramBot.csproj", "{BA6BEDD5-668A-41FC-ACEB-B2EC5D7D26EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D34E7A89-5F52-45F9-8F1C-C6DD235D886C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D34E7A89-5F52-45F9-8F1C-C6DD235D886C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D34E7A89-5F52-45F9-8F1C-C6DD235D886C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D34E7A89-5F52-45F9-8F1C-C6DD235D886C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F27F1D-32C4-47DB-A31A-8D99448FE17B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9F27F1D-32C4-47DB-A31A-8D99448FE17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F27F1D-32C4-47DB-A31A-8D99448FE17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9F27F1D-32C4-47DB-A31A-8D99448FE17B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA6BEDD5-668A-41FC-ACEB-B2EC5D7D26EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6BEDD5-668A-41FC-ACEB-B2EC5D7D26EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6BEDD5-668A-41FC-ACEB-B2EC5D7D26EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6BEDD5-668A-41FC-ACEB-B2EC5D7D26EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
