@@ -25,7 +25,7 @@ public class CRUD_Repository<T> : BaseRepository, ICRUD_REpository<T> where T : 
     public async Task<T> Add(T? entity)
     {
         if (entity is null) throw new NullReferenceException();
-        var result = Context.Set<T>().AddAsync(entity);
+        var result = Context.AddAsync<T>(entity);
         await Context.SaveChangesAsync();
 
         return result.Result.Entity;
