@@ -1,6 +1,6 @@
 ﻿namespace ShopApi.DataBaseContext.Repositories.Product;
 
-public interface IProductRepository
+public interface IProductRepository : ICRUD_REpository<Entities.Product>
 {
     
 }

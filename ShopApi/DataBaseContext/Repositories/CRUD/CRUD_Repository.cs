@@ -33,15 +33,16 @@ public class CRUD_Repository<T> : BaseRepository, ICRUD_REpository<T> where T : 
 
     public async Task<T> Update(T entity)
     {
-        var result = Context.Set<T>().Update(entity);
+        var result = Context.Update(entity).Entity;
         await Context.SaveChangesAsync();
 
-        return result.Entity;
+        return result;
     }
 
-    public async Task<T> Remove(T entity)
+    public async Task<T> Remove(Guid id)
     {
-        var result = Context.Set<T>().Remove(entity);
+        var entity = await Context.Set<T>().FirstOrDefaultAsync(e => e.Id == id);
+        var result = Context.Set<T>().Remove(entity ?? throw new InvalidOperationException());
         await Context.SaveChangesAsync();
 
         return result.Entity;

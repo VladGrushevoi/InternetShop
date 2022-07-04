@@ -7,4 +7,4 @@ global using System.Reflection;
 global using FluentValidation;
 global using ShopApi.Features.Behaviors;
 global using Microsoft.AspNetCore.Mvc;
-global using ShopApi.Features.CategoryCQRS.Commands;
+global using ShopApi.DataBaseContext.Entities;

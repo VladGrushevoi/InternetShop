@@ -4,7 +4,7 @@ public sealed class DataBaseContext : DbContext
 {
     public DataBaseContext(DbContextOptions<DataBaseContext> opt) : base(opt)
     {
-        Database.EnsureCreatedAsync();
+        _ = Database.EnsureCreatedAsync().Result;
     }
 
     public DbSet<User>? Users { get; set; }
