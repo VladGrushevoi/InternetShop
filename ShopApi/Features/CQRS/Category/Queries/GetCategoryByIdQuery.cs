@@ -23,7 +23,7 @@ public sealed class GetCategoryByIdQuery : IRequest<CategoryResponse>
         }
     }
     
-    private sealed class GetCategoryByIdValidator : AbstractValidator<GetCategoryByIdQuery>
+    public sealed class GetCategoryByIdValidator : AbstractValidator<GetCategoryByIdQuery>
     {
         public GetCategoryByIdValidator()
         {

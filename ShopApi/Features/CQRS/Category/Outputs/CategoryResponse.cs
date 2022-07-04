@@ -1,6 +1,6 @@
 ﻿namespace ShopApi.Features.CQRS.Category.Outputs;
 
-public class CategoryResponse
+public sealed class CategoryResponse
 {
     public Guid Id { get; set; }
     public string Name { get; set; }

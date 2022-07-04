@@ -32,7 +32,7 @@ public class UpdateCategoryCommand : IRequest<CategoryResponse>
         }
     }
     
-    private class UpdateCategoryCommandValidator : AbstractValidator<UpdateCategoryCommand>
+    public class UpdateCategoryCommandValidator : AbstractValidator<UpdateCategoryCommand>
     {
         public UpdateCategoryCommandValidator()
         {

@@ -24,7 +24,7 @@ public sealed class RemoveCategoryCommand : IRequest<CategoryResponse>
         }
     }
 
-    private sealed class RemoveCategoryCommandValidator : AbstractValidator<RemoveCategoryCommand>
+    public sealed class RemoveCategoryCommandValidator : AbstractValidator<RemoveCategoryCommand>
     {
         public RemoveCategoryCommandValidator()
         {
