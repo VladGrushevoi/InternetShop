@@ -7,14 +7,14 @@ public class CRUD_Repository<T> : BaseRepository, ICRUD_REpository<T> where T : 
         
     }
     
-    public async Task<IEnumerable<T>> GetAll()
+    public virtual async Task<IEnumerable<T>> GetAll()
     {
         var result = Context.Set<T>().ToListAsync();
 
         return await result;
     }
 
-    public async Task<T> GetById(Guid id)
+    public virtual async Task<T> GetById(Guid id)
     {
         var result = await Context.Set<T>().FirstOrDefaultAsync(e => e.Id == id);
         if (result is null) throw new NullReferenceException();
@@ -22,7 +22,7 @@ public class CRUD_Repository<T> : BaseRepository, ICRUD_REpository<T> where T : 
         return result;
     }
 
-    public async Task<T> Add(T? entity)
+    public virtual async Task<T> Add(T? entity)
     {
         if (entity is null) throw new NullReferenceException();
         var result = Context.AddAsync<T>(entity);
@@ -31,7 +31,7 @@ public class CRUD_Repository<T> : BaseRepository, ICRUD_REpository<T> where T : 
         return result.Result.Entity;
     }
 
-    public async Task<T> Update(T entity)
+    public virtual async Task<T> Update(T entity)
     {
         var result = Context.Update(entity).Entity;
         await Context.SaveChangesAsync();
@@ -39,7 +39,7 @@ public class CRUD_Repository<T> : BaseRepository, ICRUD_REpository<T> where T : 
         return result;
     }
 
-    public async Task<T> Remove(Guid id)
+    public virtual async Task<T> Remove(Guid id)
     {
         var entity = await Context.Set<T>().FirstOrDefaultAsync(e => e.Id == id);
         var result = Context.Set<T>().Remove(entity ?? throw new InvalidOperationException());

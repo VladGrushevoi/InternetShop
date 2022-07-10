@@ -3,7 +3,7 @@ using ShopApi.Features.CQRS.OrderStatus.Outputs;
 using ShopApi.Features.CQRS.OrderStatus.Queries;
 using ShopApi.Models;
 
-namespace ShopApi.Controllers;
+namespace ShopApi.Controllers.OrderStatus;
 [ApiController]
 [Route("[controller]")]
 public class OrderStatusController : ControllerBase

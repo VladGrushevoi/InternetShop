@@ -9,6 +9,6 @@ public sealed class ProductDescription : BaseEntity
     public decimal Price { get; set; }
     public string? AdditionalCharacteristic { get; set; }
 
-    public ICollection<Comment> Comments { get; set; }
+    public ICollection<Comment>? Comments { get; set; }
     // public Product Product { get; set; }
 }
